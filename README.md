@@ -18,8 +18,8 @@
 
 ![xx2](https://user-images.githubusercontent.com/72580629/109654402-35437180-7b73-11eb-8ed1-21fc43a8036d.JPG)
 
-###### Abstract : Soyut nesneleri yani interface'leri, abstract nesneleri ve base classları bu klasörün içine ekleyeceğiz.
-###### Concrete : Somut nesneleri yani gerçek işi yapan class'ları bu klasörün içine ekleyeceğiz.
+###### Abstract : Soyut nesneleri ekleyeceğiz onlar bizim referans tutucularımız olacak. Yani interface'leri, abstract nesneleri ve base classları bu klasörün içine ekleyeceğiz.
+###### Concrete : Somut nesneleri yani gerçek işi yapan class'ları bu klasörün içine ekleyeceğiz. Bu sınıflar bir veritabanı tablosuna karşılık gelir.
 
 :exclamation: Oluşturduğumuz class'ları "_**public**_" yapmalıyız ki diğer katmanlar da bu class'lara erişim hakkı kazansınlar. Çünkü DataAccess ürünü ekleyecek ise Business ürünü kontrol edecektir. ConsoleUI de ürünü gösterecektir.
 
