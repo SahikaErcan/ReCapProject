@@ -21,3 +21,4 @@
 ###### Abstract : Soyut nesneleri yani interface'leri, abstract nesneleri ve base classları bu klasörün içine ekleyeceğiz.
 ###### Concrete : Somut nesneleri yani gerçek işi yapan class'ları bu klasörün içine ekleyeceğiz.
 
+:exclamation: Oluşturduğumuz class'ları "_**public**_" yapmalıyız ki diğer katmanlar da bu class'lara erişim hakkı kazansınlar. Çünkü DataAccess ürünü ekleyecek ise Business ürünü kontrol edecektir. ConsoleUI de ürünü gösterecektir.
