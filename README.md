@@ -12,7 +12,13 @@
 ###### DataAccess (*Veri Erişim Katmanı*) : Sadece veriye erişmek için gerekli kodlar yazılır. Veriye erişmek için farklı teknikler vardır. İhtiyaca bağlı farklı teknikler kullanmak durumunda kalabiliriz. Uygulamada yapacağımız teknik değişikliklerden diğer projelerin etkilenmesi ve istenilen kod bloğuna erişim kolaylığı sağlamak amacı ile katmanlar kullanıyoruz.
 ###### Business (*İş Katmanı*) : Kuralları yazdığımız yer.
 ###### Entities (*Yardımcı Katman*) : Tüm katmanlarda kullanabileceğimiz yapıları bu katmanda bulundururuz.
-###### ConcoleUI (*API*) : Business, DataAccess ve Enities katmanlarını API katmanı ile dış dünyaya aktarırız.
+###### ConsoleUI (*API*) : Business, DataAccess ve Enities katmanlarını API katmanı ile dış dünyaya aktarırız.
+
+*DataAccess :point_right: Entities* **ile**
+
+*Business :point_right: DataAccess ve Entities* **ile**
+
+*ConsoleUI :point_right: DataAccess, Entities ve Business* **ile ilişkilidir.**
 
 **ConsoleUI hariç tüm katmanlara _Abstract_ ve _Concrete_ klasörleri ekliyoruz.**
 
