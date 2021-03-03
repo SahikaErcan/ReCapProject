@@ -14,11 +14,11 @@
 ###### Entities (*Yardımcı Katman*) : Tüm katmanlarda kullanabileceğimiz yapıları bu katmanda bulundururuz.
 ###### ConsoleUI (*API*) : Business, DataAccess ve Enities katmanlarını API katmanı ile dış dünyaya aktarırız.
 
-*DataAccess :point_right: Entities* **ile**
+:cyclone: *DataAccess :point_right: Entities* **ile**
 
-*Business :point_right: DataAccess ve Entities* **ile**
+:cyclone: *Business :point_right: DataAccess ve Entities* **ile**
 
-*ConsoleUI :point_right: DataAccess, Entities ve Business* **ile ilişkilidir.**
+:cyclone: *ConsoleUI :point_right: DataAccess, Entities ve Business* **ile ilişkilidir.**
 
 **ConsoleUI hariç tüm katmanlara _Abstract_ ve _Concrete_ klasörleri ekliyoruz.**
 
