@@ -68,7 +68,7 @@ Insert into Cars(BrandId,ColorId,ModelYear,DailyPrice,Description) values
 
 ## EntityFramework
 
-Entity Framework Microsoft tarafından geliştirilmiş ORM(Object Relational Mapping) araçlarından biridir. ORM ise İlişkisel veritabanı ile nesneye yönelik programlama(OOP) arasında bir köprü görevi gören araçtır.Entity Framework, ADO.NET için açık kaynaklı bir nesne ilişkisel eşleme (Object Relational Mapping - ORM) çerçevesidir.İçerisinde UnitOfWork design pattern’nini barındırmaktadır. UnitOfWork ise yapılan her değişkliğin anlık olarak veritabanına yansıması yerine, bu işlemlerin toplu halde tek bir kanal üzerinden gerçekleşmesini sağlar.
+Entity Framework Microsoft tarafından geliştirilmiş ORM (Object Relational Mapping) araçlarından biridir. ORM ise İlişkisel veritabanı ile nesneye yönelik programlama(OOP) arasında bir köprü görevi gören araçtır.Entity Framework, ADO.NET için açık kaynaklı bir nesne ilişkisel eşleme (ORM) çerçevesidir.İçerisinde UnitOfWork design pattern’nini barındırmaktadır. UnitOfWork ise yapılan her değişkliğin anlık olarak veritabanına yansıması yerine, bu işlemlerin toplu halde tek bir kanal üzerinden gerçekleşmesini sağlar.
 
 :thumbsup: **Avantajları**
 
