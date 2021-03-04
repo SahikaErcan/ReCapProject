@@ -65,3 +65,25 @@ Insert into Cars(BrandId,ColorId,ModelYear,DailyPrice,Description) values
 (6,3,'2019',630,'MAZDA CX-5 - Silver'),
 (7,1,'2021',720,'PORSCHE P911 Turbo S - Black');
 ```
+
+## EntityFramework
+
+Entity Framework Microsoft tarafından geliştirilmiş ORM(Object Relational Mapping) araçlarından biridir. ORM ise İlişkisel veritabanı ile nesneye yönelik programlama(OOP) arasında bir köprü görevi gören araçtır.Entity Framework, ADO.NET için açık kaynaklı bir nesne ilişkisel eşleme (Object Relational Mapping - ORM) çerçevesidir.İçerisinde UnitOfWork design pattern’nini barındırmaktadır. UnitOfWork ise yapılan her değişkliğin anlık olarak veritabanına yansıması yerine, bu işlemlerin toplu halde tek bir kanal üzerinden gerçekleşmesini sağlar.
+
+:thumbsup: **Avantajları**
+
+OOP olarak kod geliştirmemize olanak tanır.
+
+Hiçbir SQL bilgisi olmayan bir kimse veritabanı işlemlerini EF ile gerçekleştirebilir.
+
+Herhangi bir veritabanına bağımlılık yoktur. Oracle, MS SQL ile kullanılabilir.
+
+Code First sayesinde projenizi veritabanınızı taşıma gereği duymadan istediğiniz yerde oluşturabilirsiniz. Buda projelerinize büyük bir esneklik sağlamaktadir.
+
+Yazılım geliştirme zamanını ve maaliyetini azaltır.
+
+:-1: **Dezavantajları**
+
+En büyük sorunumuz performans. Ado.Net gibi hızlı bir performansı yoktur. Tabi bu yavaş olduğu anlamına gelmez.
+
+Veritabanından veri alış-verişi yapılacağı zaman kontrol bizde değil Entity Frameworktedir. Yani arka planda veritabanı işlemleri için kendisi sorgular oluşturmaktadır. Basit bir veri işlemi için karmaşık bir sorgu gönderebilmektedir. Bu Sorguları SQL Server Profiler ile görüntüleyebilmektesiniz.
