@@ -12,14 +12,8 @@ namespace DataAccess.Abstract
       "DataAccess > Add > Project Referance... ı açıyoruz ve ilgili katmanları (Entities) seçiyoruz."*/
     /* Bu referans olayı ile DataAccess katmanı, Entities Katmanındaki "Car, Brand ve Color" ve daha
        sonra oluşacak olan başka şeyleri ekler, siler, günceller, listeler... */
-    public interface ICarDal
+    public interface ICarDal:IEntityRepository<Car>
     {
-        List<Car> GetAll(); // Yazarak "hepsini getir" diyoruz.Veriler farklı bir katmandan gelecek.
-        List<Car> GetById(int id);
-        void Add(Car car);
-        void Delete(Car car);
-        void Update(Car car);
-    // Interface metodları default publictir ama kendisi değildir. 
-    // Bu nedenle oluşturduktan sonra public diye belirliyoruz.
+       
     }
 }
