@@ -66,7 +66,7 @@ Insert into Cars(BrandId,ColorId,ModelYear,DailyPrice,Description) values
 (7,1,'2021',720,'PORSCHE P911 Turbo S - Black');
 ```
 
-## EntityFramework
+## Entity Framework
 
 Entity Framework Microsoft tarafından geliştirilmiş ORM (Object Relational Mapping) araçlarından biridir. ORM ise İlişkisel veritabanı ile nesneye yönelik programlama(OOP) arasında bir köprü görevi gören araçtır.Entity Framework, ADO.NET için açık kaynaklı bir nesne ilişkisel eşleme (ORM) çerçevesidir.İçerisinde UnitOfWork design pattern’nini barındırmaktadır. UnitOfWork ise yapılan her değişkliğin anlık olarak veritabanına yansıması yerine, bu işlemlerin toplu halde tek bir kanal üzerinden gerçekleşmesini sağlar.
 
@@ -87,3 +87,11 @@ Yazılım geliştirme zamanını ve maaliyetini azaltır.
 En büyük sorunumuz performans. Ado.Net gibi hızlı bir performansı yoktur. Tabi bu yavaş olduğu anlamına gelmez.
 
 Veritabanından veri alış-verişi yapılacağı zaman kontrol bizde değil Entity Frameworktedir. Yani arka planda veritabanı işlemleri için kendisi sorgular oluşturmaktadır. Basit bir veri işlemi için karmaşık bir sorgu gönderebilmektedir. Bu Sorguları SQL Server Profiler ile görüntüleyebilmektesiniz.
+
+## Entity Framework Kurulumu
+
+EntityFramework ORM aracı bir NuGet paketidir. NuGet, .Net platformu ile yazılım geliştirirken kullanılan harici paketlerin yönetimini sağlar.Visual Studio ortamında projeye sağ tık yapıp **_Manage NuGet Packages_** seçeneği ile **_Microsoft.EntityFrameworkCore.SqlServer_**'ı seçip gerekli version ayarlarını yaparak kurulumunu gerçekleştirebiliriz.
+
+![aaa](https://user-images.githubusercontent.com/72580629/109894198-1a215080-7c9e-11eb-832d-0e3e2ac0cb2e.JPG)
+
+Bu DataAccess içinde EntityFramework kullanabiliriz demektir.
